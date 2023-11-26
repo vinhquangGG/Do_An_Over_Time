@@ -1,0 +1,548 @@
+$link-icon-v2: url('../images/ICON1.svg');
+$link-icon-v1: url('../images/ICON.svg');
+$icon-project: url('../images/icon_project.svg');
+@import './var-mixin.scss';
+
+//Icon Error
+@include setIconWithDefaultColor(
+    icon-false,
+    20px,
+    20px,
+    -762px,
+    -146px,
+    $link-icon-v2
+);
+
+//App icon
+@include setIconWithDefaultColor(
+    app-icon,
+    32px,
+    32px,
+    -608px,
+    -64px,
+    $link-icon-v1
+);
+
+//add white color icon
+@include setIconWithCustomColor(
+    white-add-icon,
+    14px,
+    14px,
+    -170px,
+    -106px,
+    $link-icon-v1,
+    #ffffff
+);
+
+//add member color icon
+@include setIconWithCustomColor(
+    add-member-icon,
+    14px,
+    14px,
+    -458px,
+    -329px,
+    $link-icon-v1,
+    var(--app-color-primary)
+);
+
+//add white color icon
+@include setIconWithCustomColor(
+    white-arrow-down-icon,
+    9px,
+    5px,
+    -235px,
+    -110px,
+    $link-icon-v1,
+    #ffffff
+);
+
+//dashboard white color icon
+@include setIconWithCustomColor(
+    white-dashboard-icon,
+    24px,
+    24px,
+    -380px,
+    -805px,
+    $link-icon-v1,
+    #ffffff
+);
+
+//back primary color icon
+@include setIconWithCustomColor(
+    primary-back-icon,
+    13px,
+    10px,
+    -201px,
+    -107px,
+    $link-icon-v1,
+    var(--app-color-primary)
+);
+
+//ticked primary color icon
+@include setIconWithCustomColor(
+    primary-ticked-icon,
+    13px,
+    9px,
+    -585px,
+    -108px,
+    $link-icon-v1,
+    var(--app-color-primary)
+);
+
+//report white color icon
+@include setIconWithCustomColor(
+    white-report-icon,
+    24px,
+    24px,
+    -301px,
+    -807px,
+    $link-icon-v1,
+    #ffffff
+);
+
+//phần trăm hoàn thành icon
+@include setIconWithDefaultColor(
+    task-completion-icon,
+    16px,
+    16px,
+    -680px, -264px,
+    $link-icon-v1
+);
+
+//lịch chưa chọn ngày icon
+@include setIconWithDefaultColor(
+    celendar-default-icon,
+    24px,
+    24px,
+    -196px, -164px,
+    $link-icon-v1
+);
+
+//lịch đã chọn ngày icon
+@include setIconWithDefaultColor(
+    celendar-icon,
+    16px,
+    15px,
+    -264px, -168px,
+    $link-icon-v1
+);
+
+//lịch quá hạn icon
+@include setIconWithCustomColor(
+    out-of-date-icon,
+    16px,
+    15px,
+    -264px, -168px,
+    $link-icon-v1,
+    var(--app-color-danger)
+);
+
+//lịch hoàn thành icon
+@include setIconWithCustomColor(
+    done-date-icon,
+    20px,
+    20px,
+    -399px, -742px,
+    $link-icon-v1,
+    var(--app-color-success)
+);
+
+//lịch hôm nay icon
+@include setIconWithCustomColor(
+    today-date-icon,
+    16px,
+    15px,
+    -264px, -168px,
+    $link-icon-v1,
+    var(--app-color-warning)
+);
+
+//sắp đến hạn icon
+@include setIconWithDefaultColor(
+    due-soon-icon,
+    20px,
+    20px,
+    -303px, -742px,
+    $link-icon-v1
+);
+
+//người thực hiện icon
+@include setIconWithDefaultColor(
+    assignee-icon,
+    24px,
+    24px,
+    -228px, -164px,
+    $link-icon-v1
+);
+
+//arrow-down icon
+@include setIconWithDefaultColor(
+    arrow-down-icon,
+    9px,
+    5px,
+    -235px,
+    -110px,
+    $link-icon-v1
+);
+
+//setting icon
+@include setIconWithDefaultColor(
+    setting-icon,
+    20px,
+    20px,
+    -646px,
+    -326px,
+    $link-icon-v1
+);
+
+//change password icon
+@include setIconWithDefaultColor(
+    change-password-icon,
+    21px,
+    19px,
+    -454px,
+    -710px,
+    $link-icon-v1
+);
+
+//cờ việt nam icon
+@include setIconWithDefaultColor(
+    vietnam-flag-icon,
+    24px,
+    18px,
+    -1648px, 
+    -262px,
+    $link-icon-v2
+);
+
+//cờ anh icon
+@include setIconWithDefaultColor(
+    england-flag-icon,
+    25px,
+    18px,
+    -1687px, 
+    -262px,
+    $link-icon-v2
+);
+
+//đăng xuất icon
+@include setIconWithDefaultColor(
+    logout-icon,
+    19px,
+    19px,
+    -147px,
+    -258px,
+    $link-icon-v2
+);
+
+
+//user setting icon
+@include setIconWithDefaultColor(
+    user-setting-icon,
+    21px,
+    19px,
+    -421px,
+    -710px,
+    $link-icon-v1
+);
+
+//home icon
+@include setIconWithDefaultColor(
+    home-icon,
+    23px,
+    21px,
+    -36px,
+    -133px,
+    $link-icon-v1
+);
+
+//implementer icon
+@include setIconWithCustomColor(
+    implementer-icon,
+    32px,
+    32px,
+    -544px,
+    -256px,
+    $link-icon-v1,
+    var(--app-color-placeholder-text)
+);
+
+//search icon
+@include setIconWithDefaultColor(
+    search-icon,
+    15px,
+    15px,
+    -200px,
+    -72px,
+    $link-icon-v1
+);
+
+//project icon
+@include setIconWithDefaultColor(
+    project-icon,
+    21px,
+    21px,
+    -422px,
+    -38px,
+    $link-icon-v1
+);
+
+
+//icon phân biệt dự án màu mặc đinh
+@include setIconWithDefaultColor(
+    project-icon-1,
+    16px,
+    16px,
+    0px,
+    0px,
+    $icon-project
+);
+@include setIconWithDefaultColor(
+    project-icon-2,
+    16px,
+    16px,
+    -16px,
+    0px,
+    $icon-project
+);
+@include setIconWithDefaultColor(
+    project-icon-3,
+    16px,
+    16px,
+    -32px,
+    0px,
+    $icon-project
+);
+@include setIconWithDefaultColor(
+    project-icon-4,
+    16px,
+    16px,
+    -48px,
+    0px,
+    $icon-project
+);
+@include setIconWithDefaultColor(
+    project-icon-5,
+    16px,
+    16px,
+    -64px,
+    0px,
+    $icon-project
+);
+@include setIconWithDefaultColor(
+    project-icon-6,
+    16px,
+    16px,
+    0px,
+    -16px,
+    $icon-project
+);
+@include setIconWithDefaultColor(
+    project-icon-7,
+    16px,
+    16px,
+    -16px,
+    -16px,
+    $icon-project
+);
+@include setIconWithDefaultColor(
+    project-icon-8,
+    16px,
+    16px,
+    -32px,
+    -16px,
+    $icon-project
+);
+@include setIconWithDefaultColor(
+    project-icon-9,
+    16px,
+    16px,
+    -48px,
+    -16px,
+    $icon-project
+);
+@include setIconWithDefaultColor(
+    project-icon-10,
+    16px,
+    16px,
+    -64px,
+    -16px,
+    $icon-project
+);
+@include setIconWithDefaultColor(
+    project-icon-11,
+    16px,
+    16px,
+    0px,
+    -32px,
+    $icon-project
+);
+@include setIconWithDefaultColor(
+    project-icon-12,
+    16px,
+    16px,
+    -16px,
+    -32px,
+    $icon-project
+);
+@include setIconWithDefaultColor(
+    project-icon-13,
+    16px,
+    16px,
+    -32px,
+    -32px,
+    $icon-project
+);
+@include setIconWithDefaultColor(
+    project-icon-14,
+    16px,
+    16px,
+    -48px,
+    -32px,
+    $icon-project
+);
+@include setIconWithDefaultColor(
+    project-icon-15,
+    16px,
+    16px,
+    -64px,
+    -32px,
+    $icon-project
+);
+
+//icon phân biệt dự án màu trắng
+@include setIconWithCustomColor(
+    white-project-icon-1,
+    16px,
+    16px,
+    0px,
+    0px,
+    $icon-project,
+    #ffffff
+);
+@include setIconWithCustomColor(
+    white-project-icon-2,
+    16px,
+    16px,
+    -16px,
+    0px,
+    $icon-project,
+    #ffffff
+);
+@include setIconWithCustomColor(
+    white-project-icon-3,
+    16px,
+    16px,
+    -32px,
+    0px,
+    $icon-project,
+    #ffffff
+);
+@include setIconWithCustomColor(
+    white-project-icon-4,
+    16px,
+    16px,
+    -48px,
+    0px,
+    $icon-project,
+    #ffffff
+);
+@include setIconWithCustomColor(
+    white-project-icon-5,
+    16px,
+    16px,
+    -64px,
+    0px,
+    $icon-project,
+    #ffffff
+);
+@include setIconWithCustomColor(
+    white-project-icon-6,
+    16px,
+    16px,
+    0px,
+    -16px,
+    $icon-project,
+    #ffffff
+);
+@include setIconWithCustomColor(
+    white-project-icon-7,
+    16px,
+    16px,
+    -16px,
+    -16px,
+    $icon-project,
+    #ffffff
+);
+@include setIconWithCustomColor(
+    white-project-icon-8,
+    16px,
+    16px,
+    -32px,
+    -16px,
+    $icon-project,
+    #ffffff
+);
+@include setIconWithCustomColor(
+    white-project-icon-9,
+    16px,
+    16px,
+    -48px,
+    -16px,
+    $icon-project,
+    #ffffff
+);
+@include setIconWithCustomColor(
+    white-project-icon-10,
+    16px,
+    16px,
+    -64px,
+    -16px,
+    $icon-project,
+    #ffffff
+);
+@include setIconWithCustomColor(
+    white-project-icon-11,
+    16px,
+    16px,
+    0px,
+    -32px,
+    $icon-project,
+    #ffffff
+);
+@include setIconWithCustomColor(
+    white-project-icon-12,
+    16px,
+    16px,
+    -16px,
+    -32px,
+    $icon-project,
+    #ffffff
+);
+@include setIconWithCustomColor(
+    white-project-icon-13,
+    16px,
+    16px,
+    -32px,
+    -32px,
+    $icon-project,
+    #ffffff
+);
+@include setIconWithCustomColor(
+    white-project-icon-14,
+    16px,
+    16px,
+    -48px,
+    -32px,
+    $icon-project,
+    #ffffff
+);
+@include setIconWithCustomColor(
+    white-project-icon-15,
+    16px,
+    16px,
+    -64px,
+    -32px,
+    $icon-project,
+    #ffffff
+);

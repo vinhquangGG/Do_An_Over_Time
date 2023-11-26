@@ -1,0 +1,215 @@
+.table__container{
+    background-color: #fff;
+    width: 100%;
+    height: calc(100vh - 260px);
+    overflow: hidden;
+}
+
+#app > div.content > div > div.content__body > div.table__container > div{
+    height: calc(100vh - 260px);
+}
+
+#app > div.content > div > div.content__body > div.table__container > div > div > div.dx-datagrid-headers.dx-datagrid-nowrap > div > table > tbody{
+    /* background-color: #f5f5f5; */
+}
+
+.dx-datagrid .dx-row > td{
+    padding: 0 12px !important;
+    height: 50px !important;
+
+}
+
+.dx-datagrid-content .dx-datagrid-table .dx-row > td{
+    vertical-align: middle;
+}
+
+.dx-datagrid-content .dx-datagrid-table .dx-row .dx-command-select{
+    padding: 0 !important;
+    width: 40px;
+    min-width: 40px;
+    max-width: 40px;
+}
+
+.dx-datagrid .dx-row-alt > td, .dx-datagrid .dx-row-alt > tr > td{
+    background-color: #fff;
+}
+
+.dx-datagrid .dx-column-lines > td{
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0!important;
+    border-collapse: collapse !important;
+}
+
+.dx-datagrid-headers .dx-datagrid-table .dx-row > td{
+    border-bottom: none;
+    border-collapse: collapse !important;
+}
+
+.dx-header-row > td > .dx-datagrid-text-content:not(.dx-sort-indicator):not(.dx-header-filter-indicator){
+    font-weight: 700;
+    color: #000 !important;
+}
+
+/* .dx-scrollable-scroll.dx-state-invisible{
+    background-color: #000;
+} */
+
+.dx-scrollable-scroll-content{
+    background: #9e9e9e!important;
+    border-radius: 10px!important;
+}
+
+#app > div.content > div > div.content__body > div.table__container > div > div > div.dx-datagrid-rowsview.dx-datagrid-nowrap.dx-scrollable.dx-visibility-change-handler.dx-scrollable-both.dx-scrollable-simulated > div > div > div.dx-scrollable-scrollbar.dx-widget.dx-scrollbar-vertical.dx-scrollbar-hoverable.dx-state-hover{
+    width: 8px;
+}
+
+#app > div.content > div > div.content__body > div.table__container > div > div > div.dx-datagrid-rowsview.dx-datagrid-nowrap.dx-scrollable.dx-visibility-change-handler.dx-scrollable-both.dx-scrollable-simulated > div > div > div.dx-scrollable-scrollbar.dx-widget.dx-scrollbar-vertical.dx-scrollbar-hoverable > div > div{
+    width: 12px;
+}
+
+.dx-datagrid-nowrap, .dx-datagrid-nowrap .dx-header-row>td>.dx-datagrid-text-content{
+    /* white-space: normal !important; */
+}
+
+#app > div.content > div > div.content__body > div.table__container > div > div > div.dx-datagrid-rowsview.dx-datagrid-nowrap.dx-scrollable.dx-visibility-change-handler.dx-scrollable-both.dx-scrollable-simulated > div > div > div.dx-scrollable-content > div > table > tbody > tr.dx-row.dx-data-row.dx-column-lines.dx-state-hover{
+  background-color: #ffede2 !important;
+}
+
+#app > div.content > div > div.content__body > div.table__container > div > div > div.dx-datagrid-rowsview.dx-datagrid-nowrap.dx-scrollable.dx-visibility-change-handler.dx-scrollable-both.dx-scrollable-simulated > div > div > div.dx-scrollable-content > div > table > tbody > tr > td.dx-command-select.dx-editor-cell.dx-editor-inline-block > div > div > span,
+#app > div.content > div > div.content__body > div.table__container > div > div > div.dx-datagrid-headers.dx-datagrid-nowrap > div > table > tbody > tr > td.dx-command-select.dx-cell-focus-disabled.dx-editor-cell.dx-editor-inline-block > div > div > span{
+    border: 2px solid #737888;
+    border-radius: 4px !important;
+}
+#app > div.content > div > div.content__body > div.table__container > div > div > div.dx-datagrid-headers.dx-datagrid-nowrap > div > table > tbody > tr > td.dx-command-select.dx-cell-focus-disabled.dx-editor-cell.dx-editor-inline-block > div > div > span::before,
+#app > div.content > div > div.content__body > div.table__container > div > div > div.dx-datagrid-rowsview.dx-datagrid-nowrap.dx-scrollable.dx-visibility-change-handler.dx-scrollable-both.dx-scrollable-simulated > div > div > div.dx-scrollable-content > div > table > tbody > tr:nth-child(1) > td.dx-command-select.dx-editor-cell.dx-editor-inline-block > div > div > span::before{
+    background: #ee5545 !important;
+    color: #fff !important;
+    /* border-radius: 4px; */
+    border-color: #ee5545 !important;
+}
+
+.dx-checkbox-checked .dx-checkbox-icon{
+    background: #ee5545 !important;
+    color: #fff !important;
+    /* border-radius: 4px; */
+    border-color: #ee5545 !important;
+}
+
+.dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused) > td{
+    background-color: #fff4e5;
+}
+
+.dx-datagrid-rowsview .dx-selection.dx-row:not(.dx-row-focused):hover > td{
+    background-color: #ffede2 !important;
+}
+
+#app > div.content > div > div.content__body > div.table__container > div > div > div.dx-datagrid-rowsview.dx-datagrid-nowrap.dx-scrollable.dx-visibility-change-handler.dx-scrollable-both.dx-scrollable-simulated > div > div > div.dx-scrollable-content > div > table > tbody > tr{
+    cursor: pointer;
+}
+
+.command-button{
+  height: 30px !important;
+  width: 30px !important;
+  border-radius: 50% !important;
+  background: #fff !important;
+  box-shadow: 0 1px 5px 1px #e1e1e1;
+  margin: 6px;
+}
+
+#app > div.content > div > div.content__body > div.table__container > div > div > div.dx-datagrid-rowsview.dx-datagrid-nowrap.dx-scrollable.dx-visibility-change-handler.dx-scrollable-both.dx-scrollable-simulated > div > div > div.dx-scrollable-content > div > table > tbody > tr > td > div.dx-widget.dx-button.dx-button-mode-contained.dx-button-normal.dx-button-has-icon.command-button.table-edit-button > div > i{
+    width: 24px;
+    height: 24px;
+    -webkit-mask-image: url('../../../assets/img/Icon.edb5c3d.svg');
+    -webkit-mask-position: -288px -24px;
+    background-color: #666!important;
+}
+
+#app > div.content > form > div > div.detail__header > div.content__header--right > div > div > i::before,
+#app > div.content > div > div.content__body > div.table__container > div > div > div.dx-datagrid-rowsview.dx-datagrid-nowrap.dx-scrollable.dx-visibility-change-handler.dx-scrollable-both.dx-scrollable-simulated > div > div > div.dx-scrollable-content > div > table > tbody > tr > td > div.dx-widget.dx-button.dx-button-mode-contained.dx-button-normal.dx-button-has-icon.command-button.table-delete-button > div > i::before,
+#app > div.content > div > div.content__body > div.table__container > div > div > div.dx-datagrid-rowsview.dx-datagrid-nowrap.dx-scrollable.dx-visibility-change-handler.dx-scrollable-both.dx-scrollable-simulated > div > div > div.dx-scrollable-content > div > table > tbody > tr > td > div.dx-widget.dx-button.dx-button-mode-contained.dx-button-normal.dx-button-has-icon.command-button.table-edit-button > div > i::before{
+    content: "";
+
+}
+
+#delete > div{
+    width: 24px;
+    height: 24px;
+    -webkit-mask-image: url('../../../assets/img/Icon.edb5c3d.svg');
+    -webkit-mask-position: -165px -22px;
+    background-color: #f44336!important;
+}
+
+#edit > div{
+    width: 24px;
+    height: 24px;
+    -webkit-mask-image: url('../../../assets/img/Icon.edb5c3d.svg');
+    -webkit-mask-position: -284px -22px;
+    background-color: #666!important;
+}
+
+#clear > div{
+    width: 24px;
+    height: 24px;
+    -webkit-mask-image: url('../../../assets/img/Icon.edb5c3d.svg');
+    -webkit-mask-position: -21px -45px;
+    background-color: #f84856!important;
+}
+
+/* #app > div.content > div > div.content__body > div.table__container > div > div > div.dx-datagrid-rowsview.dx-datagrid-nowrap.dx-scrollable.dx-visibility-change-handler.dx-scrollable-both.dx-scrollable-simulated > div > div > div.dx-scrollable-content > div > table > tbody > tr > td > div.dx-widget.dx-button.dx-button-mode-contained.dx-button-normal.dx-button-has-icon.command-button.table-delete-button{
+    position: fixed;
+    right: 44px;
+}
+
+#app > div.content > div > div.content__body > div.table__container > div > div > div.dx-datagrid-rowsview.dx-datagrid-nowrap.dx-scrollable.dx-visibility-change-handler.dx-scrollable-both.dx-scrollable-simulated > div > div > div.dx-scrollable-content > div > table > tbody > tr > td > div.dx-widget.dx-button.dx-button-mode-contained.dx-button-normal.dx-button-has-icon.command-button.table-edit-button{
+    position: fixed;
+    right: 88px;
+} */
+
+
+.test{
+    opacity: 0;
+}
+
+#app > div.content > div > div.content__body > div.table__container > div > div > div.dx-datagrid-rowsview.dx-datagrid-nowrap.dx-fixed-columns.dx-scrollable.dx-visibility-change-handler.dx-scrollable-both.dx-scrollable-simulated > div.dx-datagrid-content.dx-datagrid-content-fixed > table > tbody > tr.dx-row.dx-data-row.dx-column-lines.dx-state-hover,
+#app > div.content > div > div.content__body > div.table__container > div > div > div.dx-datagrid-rowsview.dx-datagrid-nowrap.dx-fixed-columns.dx-scrollable.dx-visibility-change-handler.dx-scrollable-both.dx-scrollable-simulated > div.dx-datagrid-content.dx-datagrid-content-fixed > table > tbody > tr.dx-row.dx-data-row.dx-column-lines.dx-row-alt.dx-state-hover{
+    background-color: #ffede2 !important;
+}
+
+#app > div.content > form > div > div.detail__header > div.content__header--right > div > div > i{
+    width: 24px;
+    height: 24px;
+    -webkit-mask-image: url('../../../assets/img/Icon.edb5c3d.svg');
+    background-color: #fff!important;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: -288px -24px;
+}
+
+#app > div.content > form > div > div.detail__content > div.detail__content--form > div.detail__form--body > div.detail__form--left > div > div.detail__date-picker.dx-show-invalid-badge.dx-datebox.dx-textbox.dx-texteditor.dx-dropdowneditor-button-visible.dx-editor-outlined.dx-texteditor-empty.dx-widget.dx-visibility-change-handler.dx-auto-width.dx-dropdowneditor.dx-datebox-datetime.dx-datebox-calendar > div > div > div.dx-texteditor-buttons-container > div.dx-widget.dx-button-mode-contained.dx-button-normal.dx-dropdowneditor-button > div > div,
+#app > div.content > form > div > div.detail__content > div.detail__content--form > div.detail__form--body > div.detail__form--left > div > div.detail__date-picker.dx-show-invalid-badge.dx-datebox.dx-textbox.dx-texteditor.dx-dropdowneditor-button-visible.dx-editor-outlined.dx-widget.dx-visibility-change-handler.dx-auto-width.dx-dropdowneditor.dx-datebox-datetime.dx-datebox-calendar.dx-validator > div.dx-dropdowneditor-input-wrapper > div > div.dx-texteditor-buttons-container > div.dx-widget.dx-button-mode-contained.dx-button-normal.dx-dropdowneditor-button > div > div{
+    width: 24px;
+    height: 24px;
+    -webkit-mask-image: url('../../../assets/img/Icon.edb5c3d.svg');
+    background-color: #666!important;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: -72px 0;
+    margin-top: 4px;
+}
+
+/* .function-row {
+    opacity: 0 !important;
+    width: 0 !important;
+} */
+
+.funtion-row{
+    display: none !important;
+    background-color: transparent !important;
+    position: absolute;
+    margin-top: -22px;
+    right: 16px;
+}
+
+
+.dx-state-hover .funtion-row{
+    display: table-cell !important;
+}

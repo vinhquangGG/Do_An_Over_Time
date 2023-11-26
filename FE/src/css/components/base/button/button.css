@@ -1,0 +1,71 @@
+.m-button{
+    height: 36px !important;
+    border-radius: 4px;
+    padding: 0px 13px;
+    min-width: 0px !important;
+    background-color: #ec5504;
+    color: #fff;
+    border: 1px solid #ec5504;
+}
+
+.w-80{
+    width: 80px !important;
+}
+
+.w-86{
+    width: 86px !important;
+}
+
+.m-button:hover{
+    background-color: #fa6000;
+    border: 1px solid #fa6000;
+}
+
+.m-button:active,
+.m-button:focus{
+    background-color: #e35102;
+    border: 1px solid #e35102;
+}
+
+.m-table-button{
+    width: auto;
+    height: 36px !important;
+    border-radius: 4px;
+    padding: 0px 16px;
+    min-width: 0px !important;
+    background-color: #ec5504;
+    color: #fff;
+    border: 1px solid #ec5504 !important;
+}
+
+.m-table-button:hover{
+    background-color: #fa6000;
+    border: 1px solid #fa6000;
+}
+
+.m-table-button:active,
+.m-table-button:focus{
+    background-color: #e35102;
+    border: 1px solid #e35102;
+    color: #fff !important;
+}
+
+.dx-button-mode-contained.dx-state-active{
+    color: #fff !important;
+}
+
+#app > div.content > div.detail__container > div.detail__header > div.content__header--right > div > div > i{
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    order: 0;
+    margin-right: 8px;
+    margin-left: 0px;
+    -webkit-mask-image: url('../../../../assets/img/Icon.edb5c3d.svg');
+    -webkit-mask-position: -290px -28px;
+    background-color: #fff!important;
+}
+
+#app > div.content > form > div > div.detail__header > div.content__header--right > div > div > i{
+    margin-right: 4px !important;
+}

@@ -1,0 +1,39 @@
+:root{
+    --app-color-background : #ffffff;
+
+    --app-color-black: #000;
+    --app-color-white: #fff;
+
+    /* mau chinh */
+    --app-color-primary: #ec5504;
+    --app-color-primary-hover: #fa5902;
+    --app-color-primary-active: #a73e05;
+    --app-color-primay-focus: #ec5504;
+
+    /* màu button */
+    --app-button-primary: #2196f3;
+
+    /* màu item selection */
+    --app-items-hover: #e1eeff;
+    --app-items-active: #abcefb;
+
+    /* mau text */
+    --app-color-primay-text: #1f1f1f;
+
+    /* mau text phu */
+    --app-color-secondary-text: #606468;
+
+    /* mau text placeholder */
+    --app-color-placeholder-text: #9fa1a5;
+
+    /* mau trang thai */
+    --app-color-success: #52d68b;
+    --app-color-warning: #f99b2f;
+    --app-color-danger: #eb3844;
+
+    /* mau border */
+    --app-color-border-outline: #e0e3e6;
+
+    /* mau icon default*/
+    --app-color-default-icon: #6e737a;
+}

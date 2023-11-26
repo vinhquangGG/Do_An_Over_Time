@@ -1,0 +1,33 @@
+.ms-con-dropdown{
+    color: #212121;
+    background: transparent;
+    border: none;
+}
+
+#app > div.content > div > div.content__body > div.content__body--function > div.content__function--right > button > div > div > div.dx-dropdowneditor-input-wrapper.dx-selectbox-container > div > div.dx-texteditor-input-container > input{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#app > div.content > div > div.content__body > div.content__body--function > div.content__function--right > button > div > div > div.dx-dropdowneditor-input-wrapper.dx-selectbox-container > div > div.dx-texteditor-buttons-container > div.dx-widget.dx-button-mode-contained.dx-button-normal.dx-dropdowneditor-button > div > div::before{
+    background: url('../../../../assets/img/Icon.edb5c3d.svg') no-repeat -104px -58px;
+    margin-top: -10px;
+    margin-left: -20px;
+}
+
+.content__function--right > div.dx-overlay-wrapper.dx-popup-wrapper.dx-dropdowneditor-overlay.dx-dropdownlist-popup-wrapper.dx-selectbox-popup-wrapper > div{
+    width: 200px !important;
+}
+
+.dx-dropdowneditor-icon::before{
+    content: "";
+}
+
+#dx-99146638-eab5-9274-2533-774cba62e2f1 > div.dx-scrollable-wrapper > div > div.dx-scrollable-content > div.dx-scrollview-content > div.dx-item.dx-list-item.dx-list-item-selected{
+    color: #ec5504 !important;
+    background-color: #ffede2 !important;
+}
+
+body > div.dx-overlay-wrapper.dx-popup-wrapper.dx-dropdowneditor-overlay.dx-dropdownlist-popup-wrapper.dx-selectbox-popup-wrapper > div{
+    width: 200px;
+}

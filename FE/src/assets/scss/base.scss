@@ -1,0 +1,347 @@
+// padding
+.pd-px-4{
+    padding: 4px;
+}
+
+.pd-px-8{
+    padding: 8px;
+}
+
+.pd-px-12{
+    padding: 12px;
+}
+
+.pd-px-16{
+    padding: 16px;
+}
+
+.pd-px-24{
+    padding: 24px;
+}
+
+.pl-px-4{
+    padding-left: 4px;
+}
+
+.pl-px-8{
+    padding-left: 8px;
+}
+
+.pl-px-12{
+    padding-left: 12px;
+}
+
+.pl-px-16{
+    padding-left: 16px;
+}
+
+.pl-px-24{
+    padding-left: 24px;
+}
+
+.pr-px-4{
+    padding-right: 4px;
+}
+
+.pr-px-8{
+    padding-right: 8px;
+}
+
+.pr-px-12{
+    padding-right: 12px;
+}
+
+.pr-px-16{
+    padding-right: 16px;
+}
+
+.pr-px-24{
+    padding-right: 24px;
+}
+
+.pr-px-32{
+    padding-right: 32px;
+}
+
+.pr-px-48{
+    padding-right: 48px;
+}
+
+.pt-px-4{
+    padding-top: 4px;
+}
+
+.pt-px-8{
+    padding-top: 8px;
+}
+
+.pt-px-12{
+    padding-top: 12px;
+}
+
+.pt-px-16{
+    padding-top: 16px;
+}
+
+.pt-px-24{
+    padding-top: 24px;
+}
+
+.pb-px-4{
+    padding-bottom: 4px;
+}
+
+.pb-px-8{
+    padding-bottom: 8px;
+}
+
+.pb-px-12{
+    padding-bottom: 12px;
+}
+
+.pb-px-16{
+    padding-bottom: 16px;
+}
+
+.pb-px-24{
+    padding-bottom: 24px;
+}
+
+// margin
+
+.ml-px-4{
+    margin-left: 4px;
+}
+
+.ml-px-8{
+    margin-left: 8px;
+}
+
+.ml-px-12{
+    margin-left: 12px;
+}
+
+.ml-px-16{
+    margin-left: 16px;
+}
+
+.ml-px-24{
+    margin-left: 24px;
+}
+
+.ml-px-40{
+    margin-left: 40px;
+}
+
+.mr-px-4{
+    margin-right: 4px;
+}
+
+.mr-px-8{
+    margin-right: 8px;
+}
+
+.mr-px-12{
+    margin-right: 12px;
+}
+
+.mr-px-16{
+    margin-right: 16px;
+}
+
+.mr-px-24{
+    margin-right: 24px;
+}
+
+.mr-px-32{
+    margin-right: 32px;
+}
+
+.mt-px-2{
+    margin-top: 2px;
+}
+
+.mt-px-4{
+    margin-top: 4px;
+}
+
+.mt-px-8{
+    margin-top: 8px;
+}
+
+.mt-px-12{
+    margin-top: 12px;
+}
+
+.mt-px-16{
+    margin-top: 16px;
+}
+
+.mt-px-24{
+    margin-top: 24px;
+}
+
+.mb-px-4{
+    margin-bottom: 4px;
+}
+
+.mb-px-8{
+    margin-bottom: 8px;
+}
+
+.mb-px-12{
+    margin-bottom: 12px;
+}
+
+.mb-px-16{
+    margin-bottom: 16px;
+}
+
+.mb-px-24{
+    margin-bottom: 24px;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.w-80{
+    width: 80%;
+}
+
+.w-60{
+    width: 60%;
+}
+
+.w-50{
+    width: 50%;
+}
+
+.w-40{
+    width: 40%;
+}
+
+.w-20{
+    width: 20%;
+}
+
+//display
+.d-flex{
+    display: flex;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.flex-2{
+    flex: 2;
+}
+
+.p-relative{
+    position: relative;
+}
+
+.p-absolute{
+    position: absolute;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.align-items-end{
+    align-items: flex-end;
+}
+
+.align-items-start{
+    align-items: flex-start;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.justify-content-end{
+    justify-content: flex-end;
+}
+
+.center-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.none-border{
+    border: none;
+}
+
+.primary-color{
+    color: var(--app-color-primary);
+}
+
+.error-color{
+    color: var(--app-color-danger);
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.hover-underline:hover{
+    text-decoration: underline;
+}
+
+.error-font{
+    font-size: 12px;
+}
+
+
+
+
+//Màu phân biệt dự án
+.project-background-1{
+    background-color: rgb(33, 150, 243);
+}
+
+.project-background-2{
+    background-color: rgb(33, 229, 243);
+}
+
+.project-background-3{
+    background-color: rgb(101, 180, 50);
+}
+
+.project-background-4{
+    background-color: rgb(76, 217, 100);
+}
+
+.project-background-5{
+    background-color: rgb(238, 195, 0);
+}
+
+.project-background-6{
+    background-color: rgb(255, 149, 0);
+}
+
+.project-background-7{
+    background-color: rgb(255, 101, 102);
+}
+
+.project-background-8{
+    background-color: rgb(184, 125, 252);
+}
+
+.project-background-9{
+    background-color: rgb(255, 145, 248);
+}
+
+
+

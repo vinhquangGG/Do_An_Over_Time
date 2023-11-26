@@ -1,0 +1,62 @@
+.content__icon-button{
+    width: 130px;
+    height: 36px;
+    padding: 0 !important;
+}
+
+
+#back,
+#app > div.content > div > div.content__header > div.content__header--right > div > div > div.dx-widget.dx-button.dx-button-mode-contained.dx-button-success.dx-button-has-text.dx-button-has-icon.content__icon-button--left,
+#app > div.content > div > div.content__header > div.content__header--right > div > div{
+    background-color: #ec5504;
+}
+
+#app > div.content > div > div.content__header > div.content__header--right > div > div > div.dx-widget.dx-button.dx-button-mode-contained.dx-button-success.dx-button-has-text.dx-button-has-icon.content__icon-button--left:hover{
+    background-color: #fa6000;
+    border: 1px solid #fa6000;
+}
+
+#app > div.content > div > div.content__header > div.content__header--right > div > div > div.dx-widget.dx-button.dx-button-mode-contained.dx-button-success.dx-button-has-text.dx-button-has-icon.content__icon-button--left:active{
+    background-color: #e35102;
+}
+
+#app > div.content > div > div.content__header > div.content__header--right > div > div{
+    border-radius: 4px;
+}
+
+.dx-button-mode-contained .dx-icon{
+    color: #fff !important;
+}
+
+.dx-button-text{
+font-weight: 600;
+}
+
+.dx-button .dx-button-content,
+.dx-button-has-text .dx-button-content {
+    padding: 0;
+}
+
+.content__icon-button--right .dx-icon {
+font-size: 14px;
+}
+
+.dx-button-mode-contained{
+    border: #ec5504;
+}
+
+.content__icon-button--right{
+    height: 20px !important;
+    width: 34px !important;
+    border-left: 1px solid #fff;
+    border-radius: 0;
+}
+
+.content__icon-button--left{
+    width: 94px;
+    height: 36px;
+}
+
+#app > div.content > div > div.content__header > div.content__header--right > div > div > a > div{
+    background: #ec5504;
+}

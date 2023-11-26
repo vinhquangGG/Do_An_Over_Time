@@ -1,0 +1,408 @@
+@import url(../components/base/button/icon-button.css);
+@import url(../components/base/input/icon-input.css);
+@import url(../components/base/dropdown/dropdown.css);
+
+.container{
+    background: #eeeeee!important;
+      height: calc(100vh - 56px);
+      padding: 16px 24px;
+      box-sizing: border-box;
+      overflow: hidden;
+  }
+
+.content__header{
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.content__header--left{
+    font-size: 20px;
+    letter-spacing: .384px!important;
+    color: #212121;
+    font-weight: 700;
+}
+
+.content__body--function{
+    background-color: #fff;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+}
+
+.content__status-selection{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    /* width: 204px; */
+}
+
+.content__status-selection--name{
+    margin-right: 6px;
+    color: gray;
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.status__combobox{
+    /* width: 68px !important; */
+    font-weight: 700 !important;
+}
+
+.status__combobox .dx-dropdowneditor-icon,
+.status__combobox .dx-button-mode-contained{
+    background-color: #fff !important;
+    border: none;
+    outline: none;
+}
+
+.status__combobox.dx-texteditor.dx-editor-outlined{
+    background: #fff !important;
+    border: none !important;
+    border-radius: 4px;
+}
+
+.content__status-selection .dx-texteditor-input{
+    font-size: 14px;
+    font-weight: 700 !important;
+    margin-bottom: 2px;
+}
+
+
+.dx-list .dx-list-item:hover{
+    background: #ffede2 !important;
+    cursor: pointer ;
+    color: #212121 !important;
+}
+.content__function--right{
+    display: flex;
+    align-items: center;
+}
+
+.content__function--icon{
+    width: 36px;
+    height: 36px;
+    justify-content: center;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.content__function--icon:hover{
+    border: 1px solid #ec5504
+}
+
+.content__setting-icon{
+    width: 24px;
+  height: 24px;
+  -webkit-mask-repeat: no-repeat;
+  background-color: #666;
+  -webkit-mask-position: -216px -24px;
+  -webkit-mask-image: url('../../assets/img/Icon.edb5c3d.svg');
+}
+
+
+.content__export-icon{
+    width: 24px;
+  height: 24px;
+  -webkit-mask-repeat: no-repeat;
+  background-color: #666;
+  -webkit-mask-position: -24px -24px;
+  -webkit-mask-image: url('../../assets/img/Icon.edb5c3d.svg');
+}
+
+.content__filter-icon{
+    width: 24px;
+  height: 24px;
+  -webkit-mask-repeat: no-repeat;
+  background-color: #666 ;
+  -webkit-mask-position: -240px -48px;
+  -webkit-mask-image: url('../../assets/img/Icon.edb5c3d.svg');
+}
+
+.content__refresh-icon{
+    width: 24px;
+  height: 24px;
+  -webkit-mask-repeat: no-repeat;
+  background-color: #666 ;
+  -webkit-mask-position: -48px 0px;
+  -webkit-mask-image: url('../../assets/img/Icon.edb5c3d.svg');
+}
+
+.content__function--icon:hover .content__refresh-icon,
+.content__function--icon:hover .content__filter-icon,
+.content__function--icon:hover .content__export-icon,
+.content__function--icon:hover .content__setting-icon
+{
+    background-color: #ec5504 ;
+}
+
+#app > div.content > div > div.content__body > div.content__body--function > div.content__function--right > div.content__department-selection.mgr_8 > div > div > div > div.dx-texteditor-input-container > div::before{
+    padding-left: 9px;
+}
+
+#app > div.content > div > div.content__body > div.content__body--function > div.content__function--right > div.content__department-selection.mgr_8 > div > div > div > div.dx-texteditor-buttons-container > div.dx-widget.dx-button-mode-contained.dx-button-normal.dx-dropdowneditor-button > div > div::before{
+    background: url('../../assets/img/Icon.edb5c3d.svg') no-repeat -199px -9px;
+	width: 10px;
+	height: 6px;
+    margin-left: -4px;
+    margin-top: -3px;
+}
+
+.dx-dropdowneditor.dx-dropdowneditor-active .dx-dropdowneditor-icon, .dx-dropdowneditor.dx-state-hover:not(.dx-custom-button-hovered) .dx-dropdowneditor-icon{
+    background-color: #fff;
+    /* border-color:#ec5504 */
+}
+
+.dx-texteditor.dx-state-hover{
+    border-color: #ec5504 !important;
+}
+
+.dx-texteditor.dx-state-active.dx-editor-filled, .dx-texteditor.dx-state-active.dx-editor-outlined, .dx-texteditor.dx-state-active.dx-editor-underlined, .dx-texteditor.dx-state-focused.dx-editor-filled, .dx-texteditor.dx-state-focused.dx-editor-outlined, .dx-texteditor.dx-state-focused.dx-editor-underlined{
+    border-color: #ec5504;
+}
+
+#app > div.content > div > div.content__body > div.content__body--function > div.content__function--right > div.content__department-selection.mgr_8 > div > div.dx-dropdowneditor-input-wrapper.dx-selectbox-container > div > div.dx-texteditor-input-container > input{
+    padding-left: 9px;
+}
+
+#dx-ee1bb68d-731a-8b28-56ea-52eaf2516716{
+    background: #fff !important;
+}
+
+.dx-list:not(.dx-list-select-decorator-enabled) .dx-list-item.dx-list-item-selected{
+    background-color: #ffede2 !important;
+    color: #ec5504 !important;
+}
+
+#status__combobox--id > div.dx-dropdowneditor-input-wrapper.dx-selectbox-container > div > div.dx-texteditor-input-container > input{
+    padding: 8px 0 8px 8px!important;
+}
+
+.setting-content{
+    background-color: #fff !important;
+    position: absolute;
+    z-index: 1000;
+    width: 350px;
+    top:184px;
+    right: 8px;
+    padding: 8px;
+}
+
+body > div.dx-overlay-wrapper.dx-popup-wrapper.dx-popover-wrapper.dx-popover-without-title.dx-popover-flipped-vertical.dx-position-bottom > div > div.dx-popup-content > div.setting-content--header > div.setting-header__title > div{
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: .324px;
+    color: #1f2023;
+}
+
+.close-button{
+    -webkit-mask-image: url(https://testcdnamisapp.misa.vn/apps/timesheet/static/img/Icon.c6e6c5f.svg);
+    -webkit-mask-position: -24px -48px;
+    width: 24px;
+    height: 24px;
+    -webkit-mask-repeat: no-repeat;
+    background-color: #666;
+    cursor: pointer;
+}
+
+.setting-header__title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+body > div.dx-overlay-wrapper.dx-popup-wrapper.dx-popover-wrapper.dx-popover-without-title.dx-popover-flipped-vertical.dx-position-bottom > div > div.dx-popup-content > div.setting-content--header > div.content__search-input.dx-show-invalid-badge.dx-textbox.dx-texteditor.dx-editor-outlined.dx-texteditor-empty.dx-widget{
+    width: 100% !important;
+}
+
+.setting-content--header{
+    padding: 12px;
+}
+
+body > div.dx-overlay-wrapper.dx-popup-wrapper.dx-popover-wrapper.dx-popover-without-title.dx-popover-flipped-vertical.dx-position-bottom > div > div.dx-popup-content > div.dx-scrollable.dx-scrollview.dx-visibility-change-handler.dx-scrollable-vertical.dx-scrollable-simulated > div.dx-scrollable-wrapper > div > div.dx-scrollable-content > div.dx-scrollview-content > div > div{
+    padding: 8px 6px 8px 10px;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.hover-change-color:hover{
+    background-color: #ebf0ff !important;
+}
+
+.setting-header__footer{
+    height: 36px;
+    padding: 16px 0 4px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #ddd;
+}
+
+.w-90{
+    width: 92px !important;
+}
+
+body > div.dx-overlay-wrapper.dx-popup-wrapper.dx-popover-wrapper.dx-popover-without-title.dx-popover-flipped-vertical.dx-position-bottom > div > div.dx-popup-content > div.dx-scrollable.dx-scrollview.dx-visibility-change-handler.dx-scrollable-vertical.dx-scrollable-simulated{
+    height: 288px;
+    width: 100%;
+}
+
+body > div.dx-overlay-wrapper.dx-popup-wrapper.dx-popover-wrapper.dx-popover-without-title.dx-popover-flipped-vertical.dx-position-bottom > div > div.dx-popup-content > div.setting-header__footer > div.dx-widget.dx-button.dx-button-mode-contained.dx-button-normal.dx-button-has-text.m-sub-button.w-90.mgr_8{
+    border: 1px solid #ccc;
+}
+
+#app > div.content > div > div.content__body > div.content__body--function > div.content__function--right > div.content__department-selection.mgr_8 > div > div.dx-dropdowneditor-input-wrapper > div > div.dx-texteditor-input-container > input{
+    padding-left: 8px;
+    cursor: pointer;
+}
+
+.denine-button {
+    color: #f44336 !important;
+    border: 1px solid #f44336 !important;
+    background-color: #fff !important;
+  }
+  .denine-button:hover {
+    background-color: #fee8e7 !important;
+    border: 1px solid #d81010 !important;
+  }
+
+  .denine-icon {
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    order: 0;
+    margin-right: 4px;
+    margin-left: 0px;
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background: url('../../assets/img/Icon.edb5c3d.svg') no-repeat -168px -96px;
+  }
+
+  .option > span {
+    margin-right: 24px;
+  }
+  .option button {
+    cursor: pointer;
+    width: auto !important;
+    height: 36px !important;
+    border-radius: 4px;
+    padding: 0px 16px 0px 12px;
+    margin-right: 8px;
+    min-width: 0px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content__function--left{
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .content__status-selection--name{
+    width: 64px;
+  }
+
+  .approve-button {
+    color: #00c853 !important;
+    border: 1px solid #00c853 !important;
+    background-color: #fff !important;
+  }
+  .approve-button:hover {
+    background-color: #b9f8e4 !important;
+    border: 1px solid #0f996d !important;
+  }
+  .approve-icon {
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    order: 0;
+    margin-right: 4px;
+    margin-left: 0px;
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background: url('../../assets/img/Icon.edb5c3d.svg') no-repeat -192px -96px;
+  }
+  
+  .export-button {
+    background-color: #fff;
+    color: #212121;
+    border: 1px solid #ddddeb;
+  }
+  .export-button:hover {
+    background-color: #eae6ff;
+    color: #1f1f23;
+    border: 1px solid #ddddeb;
+  }
+  .export-icon {
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    order: 0;
+    margin-right: 4px;
+    margin-left: 0px;
+    text-align: center;
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    -webkit-mask-position: -24px -24px;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-image: url('../../assets/img/Icon.edb5c3d.svg');
+    background-color: #666 !important;
+  }
+  .delete-all-button {
+    background-color: #fff;
+    color: #ef292f;
+    border: 1px solid #ef292f;
+  }
+  .delete-all-button:hover {
+    background-color: #fee8e7;
+    color: #ef292f;
+    border: 1px solid #ef292f;
+  }
+  .delete-all-icon {
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    order: 0;
+    margin-right: 4px;
+    margin-left: 0px;
+    text-align: center;
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background: url('../../assets/img/Icon.edb5c3d.svg') no-repeat -168px -24px;
+  }
+
+  #app > div.content > div > div.content__body > div.table__container > div > div > div.dx-datagrid-rowsview.dx-datagrid-nowrap.dx-fixed-columns.dx-scrollable.dx-visibility-change-handler.dx-scrollable-both.dx-scrollable-simulated > div.dx-datagrid-content.dx-datagrid-content-fixed > table > tbody > tr{
+    height: 50px !important;
+  }
+
+.dx-treeview-toggle-item-visibility.dx-treeview-toggle-item-visibility-opened::before{
+  content: "\F001";
+  position: absolute;
+  display: block;
+  width: 22px;
+  top: 50%;
+  margin-top: -11px;
+  left: 50%;
+  margin-left: -11px;
+}

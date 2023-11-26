@@ -1,0 +1,383 @@
+{
+  "format": 1,
+  "restore": {
+    "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.UnitTests\\Demo.WebApplication.UnitTests.csproj": {}
+  },
+  "projects": {
+    "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.API\\Demo.WebApplication.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.API\\Demo.WebApplication.API.csproj",
+        "projectName": "Demo.WebApplication.API",
+        "projectPath": "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.API\\Demo.WebApplication.API.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.BL\\Demo.WebApplication.BL.csproj": {
+                "projectPath": "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.BL\\Demo.WebApplication.BL.csproj"
+              },
+              "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.Common\\Demo.WebApplication.Common.csproj": {
+                "projectPath": "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.Common\\Demo.WebApplication.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.BL\\Demo.WebApplication.BL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.BL\\Demo.WebApplication.BL.csproj",
+        "projectName": "Demo.WebApplication.BL",
+        "projectPath": "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.BL\\Demo.WebApplication.BL.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.BL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.Common\\Demo.WebApplication.Common.csproj": {
+                "projectPath": "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.Common\\Demo.WebApplication.Common.csproj"
+              },
+              "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.DL\\Demo.WebApplication.DL.csproj": {
+                "projectPath": "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.DL\\Demo.WebApplication.DL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "DocumentFormat.OpenXml": {
+              "target": "Package",
+              "version": "[2.19.0, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.Common\\Demo.WebApplication.Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.Common\\Demo.WebApplication.Common.csproj",
+        "projectName": "Demo.WebApplication.Common",
+        "projectPath": "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.Common\\Demo.WebApplication.Common.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.DL\\Demo.WebApplication.DL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.DL\\Demo.WebApplication.DL.csproj",
+        "projectName": "Demo.WebApplication.DL",
+        "projectPath": "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.DL\\Demo.WebApplication.DL.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.DL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.Common\\Demo.WebApplication.Common.csproj": {
+                "projectPath": "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.Common\\Demo.WebApplication.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.0.123, )"
+            },
+            "EPPlus": {
+              "target": "Package",
+              "version": "[6.2.0, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.UnitTests\\Demo.WebApplication.UnitTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.UnitTests\\Demo.WebApplication.UnitTests.csproj",
+        "projectName": "Demo.WebApplication.UnitTests",
+        "projectPath": "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.UnitTests\\Demo.WebApplication.UnitTests.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.UnitTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.API\\Demo.WebApplication.API.csproj": {
+                "projectPath": "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.API\\Demo.WebApplication.API.csproj"
+              },
+              "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.Common\\Demo.WebApplication.Common.csproj": {
+                "projectPath": "H:\\Do_An_Cuoi_Ky\\BE\\Demo.WebApplication.Common\\Demo.WebApplication.Common.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Core": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.3.2, )"
+            },
+            "NSubstitute": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            },
+            "NUnit.Analyzers": {
+              "target": "Package",
+              "version": "[3.5.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

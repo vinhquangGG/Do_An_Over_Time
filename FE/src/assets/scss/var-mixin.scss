@@ -1,0 +1,78 @@
+//icon có màu
+@mixin setIconWithCustomColor(
+    $icon-name,
+    $icon-width,
+    $icon-height,
+    $icon-posX,
+    $icon-posY,
+    $icon-link,
+    $icon-color,
+    $icon-tranform-rotate: 0deg
+) {
+    .#{$icon-name} {
+        min-width: $icon-width;
+        min-height: $icon-height;
+        width: $icon-width !important;
+        height: $icon-height !important;
+        -webkit-mask-image: $icon-link ;
+        -webkit-mask-position: $icon-posX $icon-posY;
+        -webkit-mask-repeat: no-repeat;
+        background-color: $icon-color;
+        transform: rotate($icon-tranform-rotate);
+    }    
+}
+
+//icon mau mặc định
+@mixin setIconWithDefaultColor(
+    $icon-name,
+    $icon-width,
+    $icon-height,
+    $icon-posX,
+    $icon-posY,
+    $icon-link,
+    $icon-tranform-rotate: 0deg
+) {
+    .#{$icon-name} {
+        min-width: $icon-width;
+        min-height: $icon-height;
+        width: $icon-width !important;
+        height: $icon-height !important;
+        background: $icon-link $icon-posX $icon-posY no-repeat !important;
+        transform: rotate($icon-tranform-rotate);
+    }    
+}
+
+//icon khong mau
+@mixin setIconWithoutColor(
+    $icon-name,
+    $icon-width,
+    $icon-height,
+    $icon-posX,
+    $icon-posY,
+    $icon-link,
+    $icon-tranform-rotate: 0deg
+) {
+    .#{$icon-name} {
+        min-width: $icon-width;
+        min-height: $icon-height;
+        width: $icon-width !important;
+        height: $icon-height !important;
+        @include make-property(mask-image, $icon-link);
+        @include make-property(mask-position, $icon-posX $icon-posY);
+        @include make-property(mask-repeat, no-repeat)
+    }    
+}
+
+//style text dai 3 cham
+@mixin generate-class-line-clamp() {
+    @for $i from 1 through 20 {
+        .line-clamp-#{$i} {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: #{$i};
+            -webkit-box-orient: vertical;
+        }
+    }
+}
+
+@include generate-class-line-clamp();

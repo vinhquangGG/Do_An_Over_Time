@@ -1,0 +1,21 @@
+@font-face {
+    font-family: Notosans;
+    src: url('../font/notosans-regular.2cb88a13.woff2');
+}
+
+@font-face {
+    font-family: Notosans-bold;
+    src: url('../font/notosans-bold.3ede5aff.woff2');
+}
+
+:root{
+    --app-font-family: 'Notosans', sans-serif !important;
+    --app-font-weight-regular: 500;
+    --app-font-weight-bold: 700;
+    --app-font-size: 13px;
+    --app-font-size-title: 28px;
+    --app-font-size-sub-title: 20px;
+    --app-line-height: 1.35715;
+    --app-border-radius: 4px;
+}
+

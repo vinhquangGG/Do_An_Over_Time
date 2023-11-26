@@ -1,0 +1,150 @@
+@import url(../css/views/employee-detail.css);
+@import url(../css/views/employee-list.css);
+@import url(../css/components/base/dialog.css);
+
+* {
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.m-l-16 {
+    margin-left: 16px!important;
+}
+
+.m-r-48 {
+    margin-right: 48px!important;
+}
+
+.flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center !important;
+}
+
+.tags{
+    display: inline;
+    border-radius: 5px;
+    font-size: 13px;
+    /* bottom: -30px; */
+    color: #fff;
+    content: attr(data-gloss);
+    padding: 5px;
+    position: absolute;
+    z-index: 98;
+    text-align: center;
+}
+
+.tags:hover:after{
+    background: #212121;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+    content: attr(data-gloss);
+    padding: 5px;
+    position: absolute;
+    z-index: 1000;
+    text-align: center;
+    width: 64px;
+    top: 32px;
+    right: -6px;
+}
+.tags:hover:before{
+    border: solid;
+    border-color: #212121 transparent;
+    border-width: 6px 6px 0px 6px;
+    content: "";
+    position: absolute;
+    z-index: 1000;
+    top: 26px;
+    left: 16px;
+    transform: rotate(180deg);
+}
+
+.dx-button-mode-contained.dx-button-default{
+    background-color: #ec5504 !important;
+}
+
+td[role='gridcell'], td[role='columnheader'] {  
+    border-left-style: none !important;  
+    border-right-style: none !important;
+}  
+
+tr[role='presentation']{
+    border-style: none !important;
+}
+
+tr[role='presentation'] td{
+    border-style: none !important;
+}
+
+.dx-datagrid-content .dx-datagrid-table{
+    border-collapse: inherit;
+}
+
+#app > div.content > div > div.content__body > div.table__container > div > div > div.dx-datagrid-rowsview.dx-datagrid-nowrap.dx-fixed-columns.dx-scrollable.dx-visibility-change-handler.dx-scrollable-both.dx-scrollable-simulated > div.dx-datagrid-content.dx-datagrid-content-fixed > table > tbody > tr > td:nth-child(5){
+    /* display: none; */
+    /* background: transparent; */
+}
+
+#app > div.content > div > div.content__body > div.table__container > div > div > div.dx-datagrid-rowsview.dx-datagrid-nowrap.dx-fixed-columns.dx-scrollable.dx-visibility-change-handler.dx-scrollable-both.dx-scrollable-simulated > div.dx-datagrid-content.dx-datagrid-content-fixed > table > tbody > tr:hover td:nth-child(5){
+    display: table-cell;
+    /* background: transparent; */
+}
+
+/* #app > div.content > div > div.content__body > div.table__container > div > div > div.dx-datagrid-rowsview.dx-datagrid-nowrap.dx-fixed-columns.dx-scrollable.dx-visibility-change-handler.dx-scrollable-both.dx-scrollable-simulated > div.dx-datagrid-content.dx-datagrid-content-fixed > table > tbody > tr */
+
+/* #dx-col-102-fixed > div > div > span, */
+td > div > div > span{
+    font-weight: 700;
+}
+
+td[role='columnheader']{
+    cursor: inherit;
+}
+
+td[role='gridcell']{
+    cursor: pointer;
+}
+
+#app > div.content > form > div > div.detail__content > div.detail__content--form > div.detail__content--list > div.content__search-input.dx-show-invalid-badge.dx-textbox.dx-texteditor.dx-editor-outlined.dx-widget,
+#app > div.content > form > div > div.detail__content > div.detail__content--form > div.detail__content--list > div.content__search-input.dx-show-invalid-badge.dx-textbox.dx-texteditor.dx-editor-outlined.dx-texteditor-empty.dx-widget{
+    margin-bottom: 18px;
+}
+
+body > div.dx-overlay-wrapper.dx-popup-wrapper.dx-dropdowneditor-overlay.dx-dropdownlist-popup-wrapper.dx-selectbox-popup-wrapper > div{
+    padding: 6px;
+}
+
+#status__combobox--id > div > div > div.dx-texteditor-input-container.dx-tag-container{
+    padding: 0 !important;
+}
+
+.dx-treeview-item-without-checkbox.dx-state-focused > .dx-treeview-item,
+.dx-treeview-item-without-checkbox.dx-state-selected > .dx-treeview-item{
+    color: #ec5504 !important;
+    background-color: #ffede2 !important;
+}
+
+.dx-treeview-item:active,
+.dx-treeview-item:hover {
+    background-color: #ffede2;
+  }
+
+#tagbox .dx-list-select-all{
+    display: none !important;
+}
+
+.dx-tagbox-popup-wrapper .dx-list-select-all{
+    display: none;
+}
+
+.dx-tagbox-popup-wrapper .dx-list-item-before-bag{
+    display: none;
+}

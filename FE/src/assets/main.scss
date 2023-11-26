@@ -1,0 +1,23 @@
+@import url('./variables/index.css');
+// @import url('./variables/var-color.css');
+// @import url('./variables/var-typography.css');
+@import url('./scss/common.scss');
+@import url('./scss/var-icon.scss');
+@import url('./scss/var-mixin.scss');
+@import url('./scss/index.scss');
+// @import url('@/assets/css');
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--app-font-family);
+}
+
+#app{
+    width: 100%;
+    height: 100vh;
+}
+

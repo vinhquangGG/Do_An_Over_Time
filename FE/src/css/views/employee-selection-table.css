@@ -1,0 +1,170 @@
+.table__layer{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    background: rgba(0,0,0,.4);
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.selection-table__content{
+    margin: 10px;
+    width: 900px;
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 4px;
+    position: relative;
+}
+
+.selection-table__header{
+    width: 100%;
+    height: 60px;
+    padding: 24px 24px 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.selection-table__header--title{
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    letter-spacing: 0.576px;
+    font-size: 22px;
+    color: rgb(33, 33, 33);
+    font-weight: 700;
+}
+
+.selection-table__header--icon{
+    -webkit-mask-image: url('../../assets/img/Icon.edb5c3d.svg');
+    -webkit-mask-position: -26px -48px;
+    background-color: #666!important;
+    color: rgb(145, 151, 175) !important;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    margin: 0 6px;
+}
+
+.icon{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon:hover{
+    background: #eff1f6;
+}
+
+.selection-table__body{
+    padding: 24px;
+}
+
+.selection-table__body--filter{
+    width: 100%;
+    height: 36px;
+    display: flex;
+    margin-bottom: 12px;
+    align-items: center;
+}
+
+
+#app > div.content > div.table__layer > div > div.selection-table__body > div.selection-table__body--filter > div.dx-show-invalid-badge.dx-selectbox.dx-textbox.dx-texteditor.dx-dropdowneditor-button-visible.dx-editor-outlined.dx-texteditor-empty.dx-widget.dx-dropdowneditor.dx-dropdowneditor-field-clickable > div > div > div.dx-texteditor-input-container > div::before{
+    padding-left: 8px;
+}
+
+#app > div.content > div.table__layer > div > div.selection-table__body > div.selection-table__body--filter > div.dx-show-invalid-badge.dx-selectbox.dx-textbox.dx-texteditor.dx-dropdowneditor-button-visible.dx-editor-outlined.dx-texteditor-empty.dx-widget.dx-dropdowneditor.dx-dropdowneditor-field-clickable > div.dx-dropdowneditor-input-wrapper.dx-selectbox-container > div > div.dx-texteditor-buttons-container > div.dx-widget.dx-button-mode-contained.dx-button-normal.dx-dropdowneditor-button > div > div::before,
+#app > div.content > div.table__layer > div > div.selection-table__body > div.selection-table__body--filter > div.dx-show-invalid-badge.dx-selectbox.dx-textbox.dx-texteditor.dx-dropdowneditor-button-visible.dx-editor-outlined.dx-texteditor-empty.dx-widget.dx-dropdowneditor.dx-dropdowneditor-field-clickable.dx-dropdowneditor-active > div.dx-dropdowneditor-input-wrapper.dx-selectbox-container > div > div.dx-texteditor-buttons-container > div.dx-widget.dx-button-mode-contained.dx-button-normal.dx-dropdowneditor-button > div > div::before{
+    background: url('../../assets/img/Icon.edb5c3d.svg') no-repeat -199px -9px;
+	width: 10px;
+	height: 6px;
+    margin-left: -4px;
+    margin-top: -3px;
+}
+
+.selection-table__paging{
+    width: calc(900px - 48px) !important;
+    top: calc(46vh + 202px);
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-radius: 0 0 4px 4px;
+}
+
+.selection-table__body--content{
+    height: 46vh;
+    position: relative;
+}
+
+.selection-table__footer{
+    width: 100%;
+    height: 68px;
+    margin-top: 54px;
+    padding: 16px 24px 16px 24px;
+    border-top: 1px solid #dadce3;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: flex-end;
+    border-radius: 0 0 4px 4px;
+}
+
+#app > div.content > div.table__layer > div > div.selection-table__body > div.selection-table__body--content > div.selection-table__body--paging > div > div.page-right > div.status__combobox.dx-show-invalid-badge.dx-selectbox.dx-textbox.dx-texteditor.dx-dropdowneditor-button-visible.dx-editor-outlined.dx-widget.dx-dropdowneditor.dx-dropdowneditor-field-clickable > div{
+    background-color: #fff;
+    color: var(--text-primary-color);
+    border-radius: 4px;
+}
+
+#app > div.content > div.table__layer > div > div.selection-table__body > div.selection-table__body--content > div.selection-table__body--paging > div > div.page-right > div.status__combobox.dx-show-invalid-badge.dx-selectbox.dx-textbox.dx-texteditor.dx-dropdowneditor-button-visible.dx-editor-outlined.dx-widget.dx-dropdowneditor.dx-dropdowneditor-field-clickable > div > div > div.dx-texteditor-input-container > input{
+    margin-left: 12px;
+    font-weight: 600;
+}
+
+#app > div.content > div.table__layer > div > div.selection-table__body > div.selection-table__body--content > div.selection-table__body--paging > div > div.page-right > div.status__combobox.dx-show-invalid-badge.dx-selectbox.dx-textbox.dx-texteditor.dx-dropdowneditor-button-visible.dx-editor-outlined.dx-widget.dx-dropdowneditor.dx-dropdowneditor-field-clickable > div > div > div.dx-texteditor-buttons-container > div.dx-widget.dx-button-mode-contained.dx-button-normal.dx-dropdowneditor-button > div > div::before{
+    /* -webkit-mask-image: url('../../assets/img/Icon.edb5c3d.svg'); */
+    /* background-color: #666!important; */
+    width: 24px;
+    height: 24px;
+    /* -webkit-mask-position: -192px 0; */
+    margin-top: -11px;
+    margin-left: -14px;
+}
+/* 
+#app > div.content > div.table__layer > div > div.selection-table__body > div.selection-table__body--content > div.selection-table__body--paging > div > div.page-right > div.status__combobox.dx-show-invalid-badge.dx-selectbox.dx-textbox.dx-texteditor.dx-dropdowneditor-button-visible.dx-editor-outlined.dx-widget.dx-dropdowneditor.dx-dropdowneditor-field-clickable > div > div > div.dx-texteditor-buttons-container{
+    padding-right: 6px;
+} */
+
+#app > div.content > div.table__layer > div > div.selection-table__body > div.selection-table__body--content > div.selection-table__body--paging > div > div.page-right > div.status__combobox.dx-show-invalid-badge.dx-selectbox.dx-textbox.dx-texteditor.dx-dropdowneditor-button-visible.dx-editor-outlined.dx-widget.dx-dropdowneditor.dx-dropdowneditor-field-clickable{
+    border: 1px solid #ddddeb !important;
+}
+
+#app > div.content > div.table__layer > div > div.selection-table__body > div.selection-table__body--content > div.dx-widget.dx-visibility-change-handler > div > div.dx-datagrid-rowsview.dx-datagrid-nowrap.dx-scrollable.dx-visibility-change-handler.dx-scrollable-both.dx-scrollable-simulated{
+    height: calc(46vh - 60px);
+}
+
+#app > div.content > div.table__layer > div > div.selection-table__body > div.selection-table__body--content > div.dx-widget.dx-visibility-change-handler > div > div.dx-datagrid-headers.dx-datagrid-nowrap{
+    border-radius: 4px 4px 0 0;
+}
+
+#app > div.content > div.table__layer > div > div.selection-table__body > div.selection-table__body--content > div.dx-widget.dx-visibility-change-handler > div > div.dx-datagrid-headers.dx-datagrid-nowrap > div{
+    /* background-color: #f5f5f5; */
+}
+
+#app > div.content > div.table__layer > div > div.selection-table__body > div.selection-table__body--filter > div.dx-show-invalid-badge.dx-dropdownbox.dx-textbox.dx-texteditor.dx-show-clear-button.dx-dropdowneditor-button-visible.dx-editor-outlined.dx-widget.dx-dropdowneditor.dx-dropdowneditor-field-clickable > div.dx-dropdowneditor-input-wrapper > div > div.dx-texteditor-input-container > input,
+#app > div.content > div.table__layer > div > div.selection-table__body > div.selection-table__body--filter > div.dx-show-invalid-badge.dx-dropdownbox.dx-textbox.dx-texteditor.dx-show-clear-button.dx-dropdowneditor-button-visible.dx-editor-outlined.dx-texteditor-empty.dx-widget.dx-dropdowneditor.dx-dropdowneditor-field-clickable > div.dx-dropdowneditor-input-wrapper > div > div.dx-texteditor-input-container > div::before{
+    margin-left: 8px;
+}
+
+
+#app > div.content > div.table__layer > div > div.selection-table__body > div.selection-table__body--filter > div.dx-show-invalid-badge.dx-dropdownbox.dx-textbox.dx-texteditor.dx-show-clear-button.dx-dropdowneditor-button-visible.dx-editor-outlined.dx-widget.dx-dropdowneditor.dx-dropdowneditor-field-clickable > div.dx-dropdowneditor-input-wrapper > div > div.dx-texteditor-buttons-container > div > div > div::before,
+#app > div.content > div.table__layer > div > div.selection-table__body > div.selection-table__body--filter > div.dx-show-invalid-badge.dx-dropdownbox.dx-textbox.dx-texteditor.dx-show-clear-button.dx-dropdowneditor-button-visible.dx-editor-outlined.dx-texteditor-empty.dx-widget.dx-dropdowneditor.dx-dropdowneditor-field-clickable > div > div > div.dx-texteditor-buttons-container > div > div > div::before{
+    background: url('../../assets/img/Icon.edb5c3d.svg') no-repeat -199px -9px;
+    width: 10px !important;
+    height: 6px !important;
+    margin-left: -4px !important;
+    margin-top: -3px !important;
+}

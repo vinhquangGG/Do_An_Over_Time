@@ -1,0 +1,42 @@
+.dx-icon-search{
+    margin-right: 8px;
+    font-size: 18px;
+    opacity: 0.8;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.content__search-input{
+    display: flex;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+    padding: 0 8px;
+    border-radius: 4px;
+    width: 320px;
+
+}
+
+.content__search-input:hover {
+    border: 1px solid #ec5504 !important;
+}
+
+.content__function--left>.dx-texteditor.dx-state-focused.dx-editor-outlined {
+    border: 1px solid #ec5504 !important;
+}
+
+.dx-placeholder::before {
+    padding: 7.5px 0px 8px;
+    opacity: 0.8;
+    /* margin-top: 1px; */
+}
+.dx-texteditor-input{
+    padding: 7px 0 8px;
+}
+
+#app > div.content > div > div.content__body > div.content__body--function > div.content__function--right > div.content__department-selection.mgr_8 > div > div > div > div.dx-texteditor-input-container > div::before{
+    padding: 8px 0 8px 9px!important;
+}
+
+#app > div.content > form > div > div.detail__content > div.detail__content--form > div.detail__form--body > div.detail__form--left > div > div.detail__date-picker.dx-show-invalid-badge.dx-datebox.dx-textbox.dx-texteditor.dx-dropdowneditor-button-visible.dx-editor-outlined.dx-texteditor-empty.dx-widget.dx-visibility-change-handler.dx-auto-width.dx-dropdowneditor.dx-datebox-datetime.dx-datebox-calendar > div > div > div.dx-texteditor-input-container > div::before{
+    padding-left: 8px;
+}

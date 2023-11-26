@@ -1,0 +1,88 @@
+body > div.dx-dialog.dx-overlay.dx-popup.dx-widget.dx-visibility-change-handler > div{
+    background-color: rgba(0,0,0,.4);
+}
+
+
+body > div.dx-dialog.dx-overlay.dx-popup.dx-widget.dx-visibility-change-handler > div > div{
+    top: 70px !important;
+    left: 50% !important;
+    transform: translate(-205px, 0) scale(1) !important;
+}
+
+body > div.dx-dialog.dx-overlay.dx-popup.dx-widget.dx-visibility-change-handler > div > div{
+    background: rgb(255, 255, 255);
+    width: 415px;
+}
+
+body > div.dx-dialog.dx-overlay.dx-popup.dx-widget.dx-visibility-change-handler > div > div > div.dx-toolbar.dx-widget.dx-visibility-change-handler.dx-collection.dx-popup-title{
+    height: 60px;
+    padding: 24px 24px 0 24px;
+    border: none;
+}
+
+body > div.dx-dialog.dx-overlay.dx-popup.dx-widget.dx-visibility-change-handler > div > div > div.dx-toolbar.dx-widget.dx-visibility-change-handler.dx-collection.dx-popup-title > div > div.dx-toolbar-before > div{
+    max-width: 100% !important;
+}
+
+body > div.dx-dialog.dx-overlay.dx-popup.dx-widget.dx-visibility-change-handler > div > div > div.dx-popup-content.dx-dialog-content > div{
+    color: #000;
+    /* height: calc(100% - 121px); */
+}
+
+body > div.dx-dialog.dx-overlay.dx-popup.dx-widget.dx-visibility-change-handler > div > div > div.dx-toolbar.dx-widget.dx-visibility-change-handler.dx-collection.dx-popup-title > div > div.dx-toolbar-before > div > div > div{
+    letter-spacing: 0.576px;
+    font-size: 24px;
+    color: rgb(33, 33, 33);
+    font-weight: 700;
+}
+
+body > div.dx-dialog.dx-overlay.dx-popup.dx-widget.dx-visibility-change-handler > div > div > div.dx-popup-content.dx-dialog-content{
+    padding: 24px;
+}
+
+body > div.dx-dialog.dx-overlay.dx-popup.dx-widget.dx-visibility-change-handler > div > div > div.dx-toolbar.dx-widget.dx-visibility-change-handler.dx-collection.dx-popup-bottom.dx-dialog-buttons{
+    padding: 16px 24px;
+    background-color: #f2f2f2;
+}
+
+body > div.dx-dialog.dx-overlay.dx-popup.dx-widget.dx-visibility-change-handler > div > div > div.dx-toolbar.dx-widget.dx-visibility-change-handler.dx-collection.dx-popup-bottom.dx-dialog-buttons > div > div.dx-toolbar-center{
+    display: flex;
+    justify-content: flex-end;
+}
+
+body > div.dx-dialog.dx-overlay.dx-popup.dx-widget.dx-visibility-change-handler > div > div > div.dx-toolbar.dx-widget.dx-visibility-change-handler.dx-collection.dx-popup-bottom.dx-dialog-buttons > div > div.dx-toolbar-center > div > div > div{
+    width: auto !important;
+    height: 36px !important;
+    border: 1px solid rgb(224, 227, 236);
+    border-radius: 4px;
+    padding: 0px 16px;
+    min-width: 80px !important;
+}
+
+.dx-button-mode-contained.dx-button-danger{
+    background-color: #e02915;
+    color: #fff;
+    border: 1px solid #e02915;
+}
+
+body > div.dx-dialog.dx-overlay.dx-popup.dx-widget.dx-visibility-change-handler > div > div > div.dx-toolbar.dx-widget.dx-visibility-change-handler.dx-collection.dx-popup-title.dx-has-close-button > div > div.dx-toolbar-after > div > div > div:hover{
+    background: #ececec;
+    /* border-radius: 50%; */
+}
+
+
+/* toast-message */
+
+body > div.dx-overlay-wrapper.dx-toast-wrapper > div{
+    height: 56px !important;
+    z-index: 2000 !important;
+    left: 90% !important;
+    top: 90% !important;
+    transform: translate(-80px, 0) !important;
+    transition: all 400ms ease 0ms;
+    visibility: visible;
+    opacity: 1;
+    /* background: #000; */
+    /* width: 240px !important; */
+    /* padding: 12px 24px !important; */
+}
