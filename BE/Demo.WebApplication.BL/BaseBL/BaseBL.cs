@@ -99,13 +99,6 @@ namespace Demo.WebApplication.BL.BaseBL
                 return new ServiceResult(false, validatefailures);
             }
 
-            //var validateFailuresCustom = ValidateRecordCustom(record, true);
-
-            //if (validateFailuresCustom.Count > 0)
-            //{
-            //    return new ServiceResult(false, validateFailuresCustom);
-            //}
-
             var res = _baseDL.InsertRecord(record);
 
             if(res.IsSuccess == true)
@@ -121,7 +114,7 @@ namespace Demo.WebApplication.BL.BaseBL
         }
 
         /// <summary>
-        /// Validate chung
+        /// Validate
         /// </summary>
         /// <param name="record">form body thông tin cần validate</param>
         /// <returns>Danh sách lỗi</returns>
@@ -134,8 +127,9 @@ namespace Demo.WebApplication.BL.BaseBL
             {
                 var propertyName = property.Name;
                 var propertyValue = property.GetValue(record);
-                var requiredAttribute = (NotEmptyAttribute?)property.GetCustomAttributes(typeof(NotEmptyAttribute), false).FirstOrDefault();
-
+                var requiredAttribute = (NotEmptyAttribute?)property
+                                           .GetCustomAttributes(typeof(NotEmptyAttribute), false)
+                                        .FirstOrDefault();
                 //Validate các trường bắt buộc
                 if (requiredAttribute != null && String.IsNullOrEmpty(propertyValue?.ToString()))
                 {

@@ -89,7 +89,7 @@
             type="normal"
           />
         </div>
-        <div class="content__header--right" v-if="mode == formModeList.detail">
+        <div class="content__header--right" v-if="mode == formModeList.detail && dataEmployee.IsAdmin">
           <DxButton
             icon="edit"
             class="m-button w-86"
@@ -778,6 +778,7 @@ export default {
     DxTextBoxButton,
   },
   created() {
+    this.dataEmployee = JSON.parse(localStorage.getItem('UserInfo'));
     // Cấu hình ngôn ngữ mặc định cho ứng dụng
     locale("vi", viMessages);
     if (!this.employeeData.OvertimeEmployee) {
@@ -946,6 +947,7 @@ export default {
       statusSelection: Resource.messages.vi.statusSelectionForm,
       showTable: false,
       employeeData: {},
+      dataEmployee: [],
       employeeDataClone: {},
       validateMessage: validateMessage,
       caseSelection: caseSelection,

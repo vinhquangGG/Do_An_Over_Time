@@ -121,7 +121,7 @@ namespace Demo.WebApplication.DL.OverTimeDL
         /// <param name="pageSize">số bản ghi trên trang</param>
         /// <param name="offSet">bản ghi bắt đầu</param>
         /// <returns>mảng các bản ghi được lọc</returns>
-        public Dictionary<string, object> GetPaging(string? keyword, String? MISACode, int? status, int pageSize = 10, int offSet = 0)
+        public Dictionary<string, object> GetPaging(string? keyword, String? MISACode, int? status, int pageSize = 10, int offSet = 0, string employeeID = "")
         {
             if (MISACode == null)
             {
@@ -138,14 +138,13 @@ namespace Demo.WebApplication.DL.OverTimeDL
             paprameters.Add("v_Limit", pageSize);
             paprameters.Add("v_Status", status);
             paprameters.Add("v_Departmentid", MISACode);
-
+            paprameters.Add("v_EmployeeID", employeeID);
             //kết nối tới database
             var dbConnection = GetOpenConnection();
 
             {
                 //thực hiện câu lệnh sql
                 var res = dbConnection.QueryMultiple(storedProcedureName, paprameters, commandType: System.Data.CommandType.StoredProcedure);
-
                 {
                     var overTimes = res.Read<OverTime>().ToList();
                     var amountData = res.Read<int>().First();

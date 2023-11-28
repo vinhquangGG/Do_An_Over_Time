@@ -97,12 +97,13 @@ namespace Demo.WebApplication.API.Controllers
             [FromQuery] String? MISACode,
             [FromQuery] int? status,
             [FromQuery] int pageSize = 10,
-            [FromQuery] int offSet = 0
+            [FromQuery] int offSet = 0,
+            [FromQuery] string employeeID = ""
             )
         {
             try
             {
-                var pagingData = _overTimeBL.GetPaging(keyword, MISACode, status, pageSize, offSet);
+                var pagingData = _overTimeBL.GetPaging(keyword, MISACode, status, pageSize, offSet, employeeID);
 
                 if (pagingData != null)
                 {

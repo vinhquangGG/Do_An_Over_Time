@@ -284,6 +284,7 @@ export default {
                 }
         },
         handleLogOut() {
+            localStorage.removeItem('UserInfo');
             this.$router.push('/login');
         }
     }

@@ -91,9 +91,9 @@ namespace Demo.WebApplication.BL.OverTimeBL
         /// <param name="pageSize">số bản ghi trên trang</param>
         /// <param name="offSet">bản ghi bắt đầu</param>
         /// <returns>mảng các bản ghi được lọc</returns>
-        public OverTimeFilterResult GetPaging(string? keyword, String? MISACode, int? status, int pageSize = 10, int offSet = 0)
+        public OverTimeFilterResult GetPaging(string? keyword, String? MISACode, int? status, int pageSize = 10, int offSet = 0, string employeeID = "")
         {
-            var result = _overTimeDL.GetPaging(keyword, MISACode, status, pageSize, offSet);
+            var result = _overTimeDL.GetPaging(keyword, MISACode, status, pageSize, offSet, employeeID);
 
             var totalRecord = result["Total"];
             var resultArray = (List<OverTime>)result["PageData"];

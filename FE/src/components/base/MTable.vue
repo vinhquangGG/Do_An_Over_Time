@@ -61,7 +61,7 @@
     <template #cell-template>
       <div class="funtion-row">
         <DxButton
-          v-if="!dataSubTable"
+          v-if="!dataSubTable && dataEmployee.IsAdmin"
           id="edit"
           class="command-button table-edit-button"
           type="normal"
@@ -69,7 +69,7 @@
           @click="fixOverTime($event)"
         />
         <DxButton
-          v-if="!dataSubTable"
+          v-if="!dataSubTable && dataEmployee.IsAdmin"
           id="delete"
           class="command-button table-delete-button"
           type="normal"
@@ -151,6 +151,7 @@ export default {
       isClearEmployee: false,
       isColumnPinArray: [],
       isShowPinIcon: [],
+      dataEmployee: [],
     };
   },
   watch: {
@@ -262,6 +263,7 @@ export default {
     },
   },
   created() {
+    this.dataEmployee = JSON.parse(localStorage.getItem('UserInfo'));
     this.isColumnPinArray = new Array(numberPinCulumn).fill(false);
     this.isShowPinIcon = new Array(numberPinCulumn).fill(false);
     this.isColumnPinArray[0] = this.isColumnPinArray[1] = true;

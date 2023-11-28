@@ -167,12 +167,12 @@
         <div class="content__function--left">
           <div>{{ $t('textButton.selected') }} <span style="font-weight: 600;">{{selectedRecord.length }}</span></div>
           <span style="padding-left: 8px; cursor: pointer; color: red; margin:0 24px;" @click="uncheckedSelectRows">{{ $t('textButton.unchecked') }}</span>
-          <button class="denine-button" @click="changeMultipleStatus(status.deny)" v-if="showDenyButton"><i class="denine-icon"></i>
+          <button class="denine-button" @click="changeMultipleStatus(status.deny)" v-if="showDenyButton && dataEmployee.IsAdmin"><i class="denine-icon"></i>
             <span>{{ $t('textButton.deny') }}</span></button>
-          <button class="approve-button" @click="changeMultipleStatus(status.accept)" v-if="showAcceptButton"><i
+          <button class="approve-button" @click="changeMultipleStatus(status.accept)" v-if="showAcceptButton && dataEmployee.IsAdmin"><i
               class="approve-icon"></i><span>{{ $t('textButton.accept') }}</span></button>
           <button @click="exportSelectedData" class="export-button"><i class="export-icon"></i> <span>{{ $t('textButton.export') }}</span></button>
-          <button class="delete-all-button" @click="multipleDelete"><i
+          <button v-if="dataEmployee.IsAdmin" class="delete-all-button" @click="multipleDelete"><i
               class="delete-all-icon"></i><span>{{ $t('textButton.delete') }}</span></button>
           </div>
       </div>
@@ -265,6 +265,7 @@ export default {
   },
   created() {
     console.log(JSON.parse(localStorage.getItem('UserInfo')));
+    this.dataEmployee = JSON.parse(localStorage.getItem('UserInfo'));
     //tạo bản sao title
     this.tableTitleArange = []
     if(this.$i18n.locale == "vi"){
@@ -363,7 +364,8 @@ export default {
       popupVisible: true,
       showAcceptButton: false,
       showDenyButton: false,
-      isUncheckedSelected:false
+      isUncheckedSelected:false,
+      dataEmployee: [],
     };
   },
   methods: {

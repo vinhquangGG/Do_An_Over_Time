@@ -110,6 +110,8 @@ namespace Demo.WebApplication.Common.Entities
         /// Tên giới tính
         /// </summary>
         public String? GenderName { get; set; }
+        public bool? IsAdmin { get; set; }
+        public bool? IsEmployee { get; set;}
 
     }
 }

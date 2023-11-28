@@ -27,7 +27,7 @@ namespace Demo.WebApplication.DL.OverTimeDL
         /// <param name="pageSize">số bản ghi trên trang</param>
         /// <param name="offSet">bản ghi bắt đầu</param>
         /// <returns>mảng các bản ghi được lọc</returns>
-        public Dictionary<string, object> GetPaging(String? keyword, String? MISACode, int? status, int pageSize = 10, int offSet = 0);
+        public Dictionary<string, object> GetPaging(String? keyword, String? MISACode, int? status, int pageSize = 10, int offSet = 0, string employeeID = "");
 
         /// <summary>
         /// Xoá nhiều bản ghi
