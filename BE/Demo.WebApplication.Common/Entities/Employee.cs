@@ -63,6 +63,7 @@ namespace Demo.WebApplication.Common.Entities
         /// </summary>
         [NotEmpty]
         public int? DepartmentId { get; set; }
+        public string AccountId { get; set; }
 
         /// <summary>
         /// Mã vị trí

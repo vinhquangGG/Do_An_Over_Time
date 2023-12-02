@@ -1,11 +1,13 @@
 using Demo.WebApplication.API;
 using Demo.WebApplication.BL;
+using Demo.WebApplication.BL.AccountBL;
 using Demo.WebApplication.BL.BaseBL;
 using Demo.WebApplication.BL.DepartmentBL;
 using Demo.WebApplication.BL.EmployeeBL;
 using Demo.WebApplication.BL.OverTimeBL;
 using Demo.WebApplication.BL.OverTimeDetailBL;
 using Demo.WebApplication.DL;
+using Demo.WebApplication.DL.AccountDL;
 using Demo.WebApplication.DL.BaseDL;
 using Demo.WebApplication.DL.DepartmentDL;
 using Demo.WebApplication.DL.EmployeeDL;
@@ -46,6 +48,8 @@ builder.Services.AddScoped<IOverTimeDetailDL, OverTimeDetailDL>();
 builder.Services.AddScoped<IOverTimeDetailBL, OverTimeDetailBL>();
 builder.Services.AddScoped<IPositionBL, PositionBL>();
 builder.Services.AddScoped<IPositionDL, PositionDL>();
+builder.Services.AddScoped<IAccountBL, AccountBL>();
+builder.Services.AddScoped<IAccountDL, AccountDL>();
 builder.Services.AddScoped(typeof(IBaseBL<>), typeof(BaseBL<>));
 builder.Services.AddScoped(typeof(IBaseDL<>), typeof(BaseDL<>));
 

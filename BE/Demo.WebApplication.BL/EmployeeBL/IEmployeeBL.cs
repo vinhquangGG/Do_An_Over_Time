@@ -54,5 +54,7 @@ namespace Demo.WebApplication.BL.EmployeeBL
         public ServiceResult GetEmployeeById(Guid recordId);
 
         public ServiceResult checkDupliceByName(string employeeCode, string password);
+
+        public ServiceResult GetEmployeeByIsAdmin(int admin);
     }
 }

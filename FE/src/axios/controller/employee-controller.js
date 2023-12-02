@@ -107,4 +107,9 @@ export async function exportData(params){
     return await axios.getAxiosBlob(endpoint,params)
 }
 
+export async function getAllEmployeeIsAdmin(param){
+    const endpoint = endPoint.EMPLOYEES;
+    return await axios.getAxios(`${endpoint}/getByAdmin?admin=${param}`)
+}
+
 

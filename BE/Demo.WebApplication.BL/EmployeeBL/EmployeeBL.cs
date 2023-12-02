@@ -375,6 +375,11 @@ namespace Demo.WebApplication.BL.EmployeeBL
         {
             return _employeeDL.checkDupliceByName(employeeCode, password);
         }
+
+        public ServiceResult GetEmployeeByIsAdmin(int admin)
+        {
+            return _employeeDL.GetEmployeeByIsAdmin(admin);
+        }
         #endregion
     }
 }

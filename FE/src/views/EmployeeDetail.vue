@@ -127,6 +127,7 @@
                   v-model:value="employeeData.EmployeeId"
                   :readOnly="mode == formModeList.fix ? true : false"
                   :searchEnabled="true"
+                  :disabled="true"
                   :searchExpr="['FullName', 'EmployeeCode']"
                   @selection-changed="getSubmitBy($event)"
                 >
@@ -494,7 +495,7 @@
                   v-if="mode == formModeList.addNew || mode == formModeList.fix"
                   id="status__combobox--id"
                   class="detail__dropdown"
-                  :data-source="treeDataSource"
+                  :data-source="treeDataSourceApproval"
                   valueExpr="EmployeeId"
                   displayExpr="FullName"
                   placeholder=""
@@ -569,6 +570,7 @@
                   valueExpr="value"
                   displayExpr="name"
                   :searchEnabled="true"
+                  :disabled="dataEmployee.IsEmployee"
                   v-model:value="employeeData.Status"
                   placeholder=""
                 >
@@ -744,7 +746,7 @@ import {
   DxRequiredRule,
   DxRangeRule,
 } from "devextreme-vue/validator";
-import { getAllEmployees } from "@/axios/controller/employee-controller.js";
+import { getAllEmployees, getAllEmployeeIsAdmin } from "@/axios/controller/employee-controller.js";
 import {
   getOverTimeById,
   addOverTime,
@@ -779,6 +781,16 @@ export default {
   },
   created() {
     this.dataEmployee = JSON.parse(localStorage.getItem('UserInfo'));
+    if(this.dataEmployee){
+      this.employeeData.EmployeeId = this.dataEmployee.EmployeeId;
+      this.employeeData.FullName = this.dataEmployee.FullName;
+      this.employeeData.EmployeeCode = this.dataEmployee.EmployeeCode;
+      this.employeeData.MISACode = this.dataEmployee.MISACode;
+      this.employeeData.PositionId = this.dataEmployee.PositionId;
+      this.employeeData.PositionName = this.dataEmployee.PositionName;
+      this.employeeData.DepartmentId = this.dataEmployee.DepartmentId;
+      this.employeeData.DepartmentName = this.dataEmployee.DepartmentName;
+    }
     // Cấu hình ngôn ngữ mặc định cho ứng dụng
     locale("vi", viMessages);
     if (!this.employeeData.OvertimeEmployee) {
@@ -963,6 +975,7 @@ export default {
         paginate: true,
         pageSize: 10,
       }),
+      treeDataSourceApproval: [],
       departmentName: "",
       relationShipNames: [],
       relationshipIDs: [],
@@ -1224,6 +1237,10 @@ export default {
         if (res != null) {
           this.employees = res.data;
           this.$emit("hideLoading");
+        }
+        const resApproval = await getAllEmployeeIsAdmin(1);
+        if(resApproval != null && resApproval.data){
+          this.treeDataSourceApproval = resApproval.data;
         }
       } catch (error) {
         console.log(error);

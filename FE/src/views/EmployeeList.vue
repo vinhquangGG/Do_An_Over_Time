@@ -266,6 +266,7 @@ export default {
   created() {
     console.log(JSON.parse(localStorage.getItem('UserInfo')));
     this.dataEmployee = JSON.parse(localStorage.getItem('UserInfo'));
+    this.params.employeeID = this.dataEmployee.EmployeeId;
     //tạo bản sao title
     this.tableTitleArange = []
     if(this.$i18n.locale == "vi"){
@@ -287,10 +288,11 @@ export default {
   watch:{
         //params thay đổi thì load lại dữ liệu
         params: {
-            handler(){
+            handler(val){
+              debugger
+              val.employeeID = this.dataEmployee.EmployeeId;
               this.getOverTimeData();
             },
-            immediate: true,
             deep: true,
         },
         //theo dõi đổi ngôn ngữ
@@ -662,6 +664,7 @@ export default {
      */
      getOverTimeData: async function(){
       try {
+        debugger
         this.showLoading();
         const res = await getOverTimeFilter(this.params);
         if (res.status == 200) {

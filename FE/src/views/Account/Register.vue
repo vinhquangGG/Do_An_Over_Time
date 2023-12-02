@@ -179,6 +179,7 @@ import eventBus from "@/utils/event-bus/event-bus.js";
 import {DxSelectBox, DxValidator, DxRequiredRule} from "devextreme-vue";
 import ServiceError from "@/commons/models/ServiceError.js";
 import { addNewEmployee, checkDuplicate } from "@/axios/controller/employee-controller";
+import {addNewUser} from "@/axios/controller/account-controller";
 import { getAllDepartments } from "@/axios/controller/department-controller";
 import { getAllPositions } from "@/axios/controller/position-controller";
 import {
@@ -323,6 +324,12 @@ async function onRegister() {
         new ToastData(true, ToastType.Error, "Đăng ký thất bại")
       );
     }
+    const re = await addNewUser({
+      AccountName: userData.value.EmployeeCode, 
+      Password: userData.value.Password,
+      Email: userData.value.Email,
+      PhoneNumber: userData.value.PhoneNumber
+    });
   } catch (error) {
     console.log(error);
     if (

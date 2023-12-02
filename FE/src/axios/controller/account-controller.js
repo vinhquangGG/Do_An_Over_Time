@@ -7,6 +7,7 @@ import {endPoint} from '@/axios/end-point.js';
  * @returns danh sách nhân viên
  */
 export async function addNewUser(params){
+    debugger
     const endpoint = endPoint.ACCOUNT;
     return await axios.postAxios(endpoint, params);
 }

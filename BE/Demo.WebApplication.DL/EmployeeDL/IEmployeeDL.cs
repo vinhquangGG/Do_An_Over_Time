@@ -57,5 +57,7 @@ namespace Demo.WebApplication.DL.EmployeeDL
 
 
         public ServiceResult checkDupliceByName(string employeeCode, string password);
+
+        public ServiceResult GetEmployeeByIsAdmin(int admin);
     }
 }

@@ -249,6 +249,20 @@ namespace Demo.WebApplication.DL.EmployeeDL
             
             return new ServiceResult(false, Resource.ServiceResult_Fail);
         }
+
+        public ServiceResult GetEmployeeByIsAdmin(int admin)
+        {
+            var dbConnection = GetOpenConnection();
+            var paprameters = new DynamicParameters();
+            paprameters.Add("v_admin", admin);
+            var res = dbConnection.Query<Employee>("Proc_Employe_GetAdmin", paprameters, commandType: System.Data.CommandType.StoredProcedure);
+            if (res != null)
+            {
+                return new ServiceResult(true, res);
+            }
+
+            return new ServiceResult(false, Resource.ServiceResult_Fail);
+        }
         #endregion
     }
 }

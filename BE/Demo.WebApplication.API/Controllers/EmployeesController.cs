@@ -9,6 +9,7 @@ using Demo.WebApplication.Common.Entities.DTO;
 using Demo.WebApplication.Common.Enums;
 using Demo.WebApplication.Common;
 using Demo.WebApplication.BL.EmployeeBL;
+using DocumentFormat.OpenXml.Office2010.Excel;
 
 //test exception
 //throw new NotImplementedException();
@@ -296,6 +297,54 @@ namespace Demo.WebApplication.API.Controllers
                 });
             }
 
+        }
+        [HttpGet("getByAdmin")]
+        public IActionResult GetEmployeeByIsAdmin([FromQuery] int admin)
+        {
+            try
+            {
+                var serviceResult = _employeeBL.GetEmployeeByIsAdmin(admin);
+
+                if (serviceResult.IsSuccess == true)
+                {
+                    return StatusCode(200, serviceResult.Data);
+                }
+                else
+                {
+                    if (serviceResult.Data == Resource.ServiceResult_Fail)
+                    {
+                        return StatusCode(204, new ErrorResult
+                        {
+                            ErrorCode = ErrorCode.SqlReturnNull,
+                            DevMsg = Resource.ServiceResult_Fail,
+                            UserMsg = Resource.UserMsg_Exception,
+                            TradeId = HttpContext.TraceIdentifier,
+                        });
+                    }
+                    else
+                    {
+                        return StatusCode(500, new ErrorResult
+                        {
+                            ErrorCode = ErrorCode.SqlCatchException,
+                            DevMsg = Resource.ServiceResult_Exception,
+                            UserMsg = Resource.UserMsg_Exception,
+                            TradeId = HttpContext.TraceIdentifier,
+                        });
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.Message);
+                return StatusCode(500, new ErrorResult
+                {
+                    ErrorCode = ErrorCode.Exception,
+                    DevMsg = Resource.DevMsg_Exception,
+                    UserMsg = Resource.UserMsg_Exception,
+                    TradeId = HttpContext.TraceIdentifier,
+                });
+            }
         }
         #endregion
     }
